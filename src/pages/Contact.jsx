@@ -1,5 +1,8 @@
-import React, { useRef, useState } from 'react';
+import React, { Suspense, useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
+import { Canvas } from '@react-three/fiber';
+import Loader from '../components/Loader';
+import { Fox } from '../models/Fox';
 
 const Contact = () => {
   const formRef = useRef(null);
@@ -52,14 +55,14 @@ const Contact = () => {
   return (
     <section className='relative flex lg:flex-row flex-col max-container'>
       <div className='flex-1 min-w-[50%] flex flex-col'>
-        <h1 className='head-text'>Get in Touch</h1>
+        <h1 className='head-text'>與我聯絡</h1>
 
         <form
           onSubmit={handleSubmit}
           className='w-full flex flex-col gap-7 mt-14'
         >
           <label className='text-black-500 font-semibold'>
-            Name
+            姓名
             <input
               type='text'
               name='name'
@@ -87,7 +90,7 @@ const Contact = () => {
             />
           </label>
           <label className='text-black-500 font-semibold'>
-            Your Message
+            留言
             <textarea
               type='text'
               name='message'
@@ -110,6 +113,19 @@ const Contact = () => {
             {isLoading ? 'Sending...' : 'Send Message'}
           </button>
         </form>
+      </div>
+      <div className='lg:w-1/2 w-full lg:h-auto md:h-[550px] h-[350px]'>
+        <Canvas
+          camera={{
+            position: [0, 0, 5],
+          }}
+        >
+          <Fox
+            position={[0.5, 0.35, 0]}
+            rotation={[12, 0, 0]}
+            scale={[0.5, 0.5, 0.5]}
+          />
+        </Canvas>
       </div>
     </section>
   );
