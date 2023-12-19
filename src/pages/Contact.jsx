@@ -23,18 +23,30 @@ const Contact = () => {
     e.preventDefault();
     setIsLoading(true);
 
-    emailjs.sendForm(
-      import.meta.env.VITE_APP_EMAILJS_SERVICE_ID,
-      import.meta.env.VITE_APP_EMAILJS_TEMPLATE_ID,
-      {
-        from_name: form.name,
-        to_name: 'Mikey',
-        from_email: form.email,
-        to_email: 'currygeigei@gmail.com',
-        message: form.message,
-      },
-      import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY,
-    );
+    emailjs
+      .send(
+        'service_p3mawnj',
+        'template_22ap6zl',
+        {
+          from_name: form.name,
+          to_name: 'Mikey',
+          from_email: form.email,
+          to_email: 'currygeigei@gmail.com',
+          message: form.message,
+        },
+        'QkJ9OCTB61Ytj38W4',
+      )
+      .then(() => {
+        setIsLoading(false);
+        // TODO: Alert to how success message
+        // TODO: Hide the alert
+        setForm({ name: '', email: '', message: '' });
+      })
+      .catch((error) => {
+        setIsLoading(false);
+        console.log(error);
+        // TODO: show error message
+      });
   };
 
   return (
