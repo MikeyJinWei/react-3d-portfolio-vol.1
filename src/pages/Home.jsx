@@ -1,6 +1,6 @@
 import { Suspense, useState } from 'react';
 import { Canvas } from '@react-three/fiber';
-import { Loader } from '@react-three/drei';
+import Loader from '../components/Loader';
 
 import Island from '../models/Island';
 import Sky from '../models/Sky';
@@ -61,30 +61,32 @@ const Home = () => {
         }`}
         camera={{ near: 0.1, far: 1000 }}
       >
-        <directionalLight position={[1, 1, 1]} intensity={2} />
-        <ambientLight intensity={0.5} />
+        <Suspense fallback={<Loader />}>
+          <directionalLight position={[1, 1, 1]} intensity={2} />
+          <ambientLight intensity={0.5} />
 
-        <hemisphereLight
-          skyColor='#b1e1ff'
-          groundColor='#000000'
-          intensity={1}
-        />
-        <Bird />
-        <Sky isRotating={isRotating} />
-        <Island
-          scale={islandScale}
-          position={islandPosition}
-          rotation={islandRotation}
-          isRotating={isRotating}
-          setIsRotating={setIsRotating}
-          setCurrentStage={setCurrentStage}
-        />
-        <Plane
-          planeScale={planeScale}
-          planePosition={planePosition}
-          rotation={[0, 20, 0]}
-          isRotating={isRotating}
-        />
+          <hemisphereLight
+            skyColor='#b1e1ff'
+            groundColor='#000000'
+            intensity={1}
+          />
+          <Bird />
+          <Sky isRotating={isRotating} />
+          <Island
+            scale={islandScale}
+            position={islandPosition}
+            rotation={islandRotation}
+            isRotating={isRotating}
+            setIsRotating={setIsRotating}
+            setCurrentStage={setCurrentStage}
+          />
+          <Plane
+            planeScale={planeScale}
+            planePosition={planePosition}
+            rotation={[0, 20, 0]}
+            isRotating={isRotating}
+          />
+        </Suspense>
       </Canvas>
     </section>
   );
