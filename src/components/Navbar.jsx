@@ -17,7 +17,7 @@ const Navbar = () => {
             isActive ? 'text-blue-500' : 'text-black'
           }
         >
-          About
+          關於我
         </NavLink>
         <NavLink
           to='/projects'
@@ -25,7 +25,7 @@ const Navbar = () => {
             isActive ? 'text-blue-500' : 'text-black'
           }
         >
-          Projects
+          作品集
         </NavLink>
         <NavLink
           to='/contact'
@@ -33,7 +33,7 @@ const Navbar = () => {
             isActive ? 'text-blue-500' : 'text-black'
           }
         >
-          Contact
+          聯絡
         </NavLink>
       </nav>
     </header>
