@@ -5,6 +5,7 @@ import {
   VerticalTimelineElement,
 } from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
+import CTA from '../components/CTA';
 
 const About = () => {
   return (
@@ -65,12 +66,13 @@ const About = () => {
                     />
                   </div>
                 }
-                iconStyle={{
+                contentStyle={{
                   borderBottom: '8px',
                   borderStyle: 'solid',
                   borderBottomColor: experience.iconBg,
                   boxShadow: 'none',
                 }}
+                iconStyle={{ background: experience.iconBg }}
               >
                 <div>
                   <h3 className='text-black text-xl font-poppins font-semibold'>
@@ -98,6 +100,10 @@ const About = () => {
           </VerticalTimeline>
         </div>
       </div>
+
+      <hr className='border-slate-200' />
+
+      <CTA />
     </section>
   );
 };
