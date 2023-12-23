@@ -27,11 +27,12 @@ body:has(.card[data-color="green"]:hover) {
   }
 
   .head-text {
-    @apply sm:text-5xl text-3xl font-semibold sm:leading-snug font-poppins;
+    
+    @apply sm:text-5xl text-3xl font-semibold text-[#eeeeee] sm:leading-snug font-poppins;
   }
 
   .subhead-text {
-    @apply font-semibold sm:text-3xl text-xl relative font-poppins;
+    @apply font-semibold sm:text-3xl text-xl relative font-poppins text-[#eeeeee];
   }
 
   .blue-gradient_text {
@@ -75,7 +76,7 @@ body:has(.card[data-color="green"]:hover) {
   }
 
   .cta-text {
-    @apply text-black-500 font-extrabold flex-1 text-3xl max-md:text-center;
+    @apply text-[#eeeeee] font-extrabold flex-1 text-3xl max-md:text-center;
   }
 }
 
@@ -111,7 +112,7 @@ body:has(.card[data-color="green"]:hover) {
   transform-origin: bottom right;
   transform: rotateZ(15deg);
   will-change: transform;
-  box-shadow: 16px 0 40px #e4e4e4;
+  box-shadow: 16px 0 40px #868B8E;
 }
 
 .block-container .btn-back-red {

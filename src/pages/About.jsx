@@ -10,14 +10,14 @@ import CTA from '../components/CTA';
 const About = () => {
   return (
     <section className='max-container'>
-      <h1 className='head-text'>
+      <h1 className='head-text text-[#eeeeee]'>
         Hello 我是{' '}
         <span className='blue-gradient_text font-semibold drop-shadow'>
           Mikey
         </span>
       </h1>
 
-      <div className='mt-5 flex flex-col gap-3 text-slate-500'>
+      <div className='mt-5 flex flex-col gap-3 text-slate-400'>
         <p>
           Software Developer based in Taiwan, finding myself obsessing with
           frontend skills through hands-on learning and building applications.
@@ -25,7 +25,7 @@ const About = () => {
       </div>
 
       <div className='py-10 flex flex-col'>
-        <h3 className='subhead-text'>學習過的語言/工具/套件</h3>
+        <h3 className='subhead-text text-[#eeeeee]'>學習過的語言/工具/套件</h3>
 
         <div className='mt-16 flex flex-wrap gap-10 justify-center lg:justify-start'>
           {skills.map((skill) => (
@@ -48,7 +48,7 @@ const About = () => {
 
       <div className='py-16'>
         <h3 className='subhead-text'>工作經驗</h3>
-        <div className='mt-5 flex flex-col gap-3 text-slate-500'>
+        <div className='mt-5 flex flex-col gap-3 text-slate-400'>
           <p>
             I've worked with all sorts of companies, leveling up my skills and
             teaming up with smart people. Here's the rundown:
@@ -58,6 +58,7 @@ const About = () => {
           <VerticalTimeline>
             {experiences.map((experience) => (
               <VerticalTimelineElement
+                className='text-[#eeeeee]'
                 key={experience.company_name}
                 date={experience.date}
                 icon={
@@ -70,6 +71,7 @@ const About = () => {
                   </div>
                 }
                 contentStyle={{
+                  background: '#000000',
                   borderBottom: '8px',
                   borderStyle: 'solid',
                   borderBottomColor: experience.iconBg,
@@ -78,11 +80,11 @@ const About = () => {
                 iconStyle={{ background: experience.iconBg }}
               >
                 <div>
-                  <h3 className='text-black text-xl font-poppins font-semibold'>
+                  <h3 className='text-[#eeeeee] text-xl font-poppins font-semibold'>
                     {experience.title}
                   </h3>
                   <p
-                    className='text-black-500 font-medium font-base'
+                    className='text-[#eeeeee] font-medium font-base'
                     style={{ margin: 0 }}
                   >
                     {experience.company_name}
@@ -92,7 +94,7 @@ const About = () => {
                   {experience.points.map((point, index) => (
                     <li
                       key={`experience-point-${index}`}
-                      className='text-black-500 font-normal pl-1 text-sm'
+                      className='text-[#eeeeee] font-normal pl-1 text-sm'
                     >
                       {point}
                     </li>

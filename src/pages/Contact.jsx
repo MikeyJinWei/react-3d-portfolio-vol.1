@@ -78,13 +78,13 @@ const Contact = () => {
     <section className='relative flex lg:flex-row flex-col max-container h-[100vh]'>
       {alert.show && <Alert {...alert} />}
       <div className='flex-1 min-w-[50%] flex flex-col'>
-        <h1 className='head-text'>與我聯絡</h1>
+        <h1 className='head-text text-[#eeeeee]'>與我聯絡</h1>
 
         <form
           onSubmit={handleSubmit}
           className='w-full flex flex-col gap-7 mt-14'
         >
-          <label className='text-black-500 font-semibold'>
+          <label className='text-[#eeeeee] font-semibold'>
             姓名
             <input
               type='text'
@@ -98,7 +98,7 @@ const Contact = () => {
               onBlur={handleBlur}
             />
           </label>
-          <label className='text-black-500 font-semibold'>
+          <label className='text-[#eeeeee] font-semibold'>
             Email
             <input
               type='email'
@@ -112,7 +112,7 @@ const Contact = () => {
               onBlur={handleBlur}
             />
           </label>
-          <label className='text-black-500 font-semibold'>
+          <label className='text-[#eeeeee] font-semibold'>
             留言
             <textarea
               type='text'
