@@ -197,8 +197,8 @@ body:has(.card[data-color="green"]:hover) {
   box-shadow: 0.6vmin 0.6vmin #3f423f, 1vmin 1vmin #ada298, 1vmin 1vmin #ada298,
   0.65vmin 1vmin #ada298, 1vmin 0.65vmin #ada298;
   background: #3f423f;
-  box-shadow: 0.6vmin 0.6vmin #202023, 1vmin 1vmin #7e847e, 1vmin 1vmin #7e847e,
-    0.65vmin 1vmin #7e847e, 1vmin 0.65vmin #7e847e;
+  box-shadow: 0.6vmin 0.6vmin #202023, 1vmin 1vmin #98A4B0, 1vmin 1vmin #98A4B0,
+    0.65vmin 1vmin #98A4B0, 1vmin 0.65vmin #98A4B0;
 }
 
 .neo-brutalism-light-grey {
