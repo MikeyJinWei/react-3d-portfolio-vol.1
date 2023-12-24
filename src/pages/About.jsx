@@ -9,37 +9,41 @@ import CTA from '../components/CTA';
 
 const About = () => {
   return (
-    <section className='max-container bg-[#202023]'>
+    <section className='max-container w-full bg-[#202023]'>
       <h1 className='head-text text-[#eeeeee]'>
-        Hello 我是{' '}
+        Hello 我是
         <span className='blue-gradient_text font-semibold drop-shadow'>
-          Mikey
+          黃勁偉(Mikey)
         </span>
       </h1>
 
-      <div className='mt-5 flex flex-col gap-3 text-slate-400'>
+      <div className='mt-5 flex flex-col gap-3 text-slate-300'>
         <p>
-          Software Developer based in Taiwan, finding myself obsessing with
-          frontend skills through hands-on learning and building applications.
+          我是一名前端開發者，在求學和就業的旅途中，我透過一次次的實作開始對網頁開發產生興趣，並每天致力於進步
         </p>
       </div>
 
       <div className='py-10 flex flex-col'>
         <h3 className='subhead-text text-[#eeeeee]'>學習過的語言/工具/套件</h3>
 
-        <div className='mt-16 flex flex-wrap gap-10 justify-center lg:justify-start'>
+        <div className='mt-16 flex flex-wrap gap-9 md:gap-9 justify-center xl:justify-start'>
           {skills.map((skill) => (
-            <div
-              className='block-container w-16 h-16 md:w-20 md:h-20'
-              key={skill.name}
-            >
-              <div className='btn-back rounded-xl' />
-              <div className='btn-front rounded-xl flex justify-evenly items-center'>
-                <img
-                  src={skill.imageUrl}
-                  alt={skill.name}
-                  className='w-1/2 h-1/2 object-contain'
-                />
+            <div key={skill.name} className=''>
+              <div className='block-container w-16 h-16 md:w-20 md:h-20'>
+                <div className='btn-back rounded-xl' />
+                <div className='btn-front rounded-xl flex justify-evenly items-center'>
+                  <img
+                    src={skill.imageUrl}
+                    alt={skill.name}
+                    className='w-1/2 h-1/2 object-contain'
+                  />
+                </div>
+              </div>
+              <div
+                key={skill.name}
+                className='flex justify-center flex-wrap w-16 md:w-20 mt-1.5 text-center text-xs md:text-sm text-[#eeeeee]'
+              >
+                <p className=''>{skill.name}</p>
               </div>
             </div>
           ))}

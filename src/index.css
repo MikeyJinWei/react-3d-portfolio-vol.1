@@ -23,7 +23,7 @@ body:has(.card[data-color="green"]:hover) {
 
 @layer utilities {
   .max-container {
-    @apply max-w-5xl mx-auto sm:p-16 pb-12 !pt-[126px] px-8 min-h-[calc(100vh-80px)];
+    @apply max-w-6xl mx-auto sm:p-16 pb-12 !pt-[126px] px-8 min-h-[calc(100vh-80px)];
   }
 
   .head-text {
@@ -117,6 +117,7 @@ body:has(.card[data-color="green"]:hover) {
   transform: rotateZ(15deg);
   will-change: transform;
   box-shadow: 16px 0 40px #868B8E;
+  box-shadow: 16px 0 40px #4c4f51;
 }
 
 .block-container .btn-back-red {
@@ -153,7 +154,8 @@ body:has(.card[data-color="green"]:hover) {
   z-index: 1;
   width: inherit;
   height: inherit;
-  background-color: #ffffff33;
+  background-color: #ffffff68;
+  background-color: #eeeeee7a;
   -webkit-backdrop-filter: blur(20px);
   backdrop-filter: blur(20px);
   transition: 250ms;

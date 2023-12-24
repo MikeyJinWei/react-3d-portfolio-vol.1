@@ -11,8 +11,12 @@ import {
   javascript,
   linkedin,
   mongodb,
+  swiper,
+  animateCss,
   motion,
   mui,
+  antd,
+  styledcomponents,
   nextjs,
   nodejs,
   pricewise,
@@ -21,9 +25,11 @@ import {
   sass,
   snapgram,
   summiz,
+  bootstrap,
   tailwindcss,
   threads,
   typescript,
+  threejs,
 } from '../assets/icons';
 
 export const skills = [
@@ -39,7 +45,12 @@ export const skills = [
   },
   {
     imageUrl: sass,
-    name: 'Sass',
+    name: 'SCSS',
+    type: 'Frontend',
+  },
+  {
+    imageUrl: bootstrap,
+    name: 'Bootstrap',
     type: 'Frontend',
   },
   {
@@ -68,18 +79,43 @@ export const skills = [
     type: 'Version Control',
   },
   {
+    imageUrl: swiper,
+    name: 'Swiper',
+    type: 'Carousel',
+  },
+  {
+    imageUrl: animateCss,
+    name: 'Animate.css',
+    type: 'Carousel',
+  },
+  {
     imageUrl: motion,
     name: 'Motion',
     type: 'Animation',
   },
   {
     imageUrl: mui,
-    name: 'Material-UI',
+    name: 'Material UI',
+    type: 'Frontend',
+  },
+  {
+    imageUrl: antd,
+    name: 'Ant Design',
+    type: 'Frontend',
+  },
+  {
+    imageUrl: styledcomponents,
+    name: 'Styled-Components',
+    type: 'CSS-in-JS',
+  },
+  {
+    imageUrl: threejs,
+    name: 'Three.js',
     type: 'Frontend',
   },
   {
     imageUrl: redux,
-    name: 'Redux',
+    name: 'Redux Toolkit',
     type: 'State Management',
   },
 ];
