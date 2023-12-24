@@ -27,9 +27,15 @@ import {
   summiz,
   bootstrap,
   tailwindcss,
+  figma,
   threads,
   typescript,
   threejs,
+  zeabur,
+  npm,
+  yarn,
+  notion,
+  vscode,
 } from '../assets/icons';
 
 export const skills = [
@@ -117,6 +123,36 @@ export const skills = [
     imageUrl: redux,
     name: 'Redux Toolkit',
     type: 'State Management',
+  },
+  {
+    imageUrl: figma,
+    name: 'Figma',
+    type: 'UI Tool',
+  },
+  {
+    imageUrl: zeabur,
+    name: 'Zeabur',
+    type: 'Deployment Service',
+  },
+  {
+    imageUrl: npm,
+    name: 'npm',
+    type: 'Package Manager',
+  },
+  {
+    imageUrl: yarn,
+    name: 'Yarn',
+    type: 'Package Manager',
+  },
+  {
+    imageUrl: notion,
+    name: 'Notion',
+    type: 'Productivity Software',
+  },
+  {
+    imageUrl: vscode,
+    name: 'VS Code',
+    type: 'Text Editor',
   },
 ];
 

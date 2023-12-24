@@ -19,6 +19,12 @@ import redux from './redux.svg';
 import sass from './sass.svg';
 import bootstrap from './bootstrap.svg';
 import tailwindcss from './tailwindcss.svg';
+import figma from './figma.svg';
+import zeabur from './zeabur.svg';
+import npm from './npm.svg';
+import yarn from './yarn.svg';
+import notion from './notion.svg';
+import vscode from './vscode.svg';
 import typescript from './typescript.svg';
 import linkedin from './linkedin.svg';
 import twitter from './twitter.svg';
@@ -55,6 +61,12 @@ export {
   sass,
   bootstrap,
   tailwindcss,
+  figma,
+  zeabur,
+  npm,
+  yarn,
+  notion,
+  vscode,
   typescript,
   linkedin,
   twitter,

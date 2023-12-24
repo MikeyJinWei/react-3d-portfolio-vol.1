@@ -24,7 +24,7 @@ const About = () => {
       </div>
 
       <div className='py-10 flex flex-col'>
-        <h3 className='subhead-text text-[#eeeeee]'>學習過的語言/工具/套件</h3>
+        <h3 className='subhead-text text-[#eeeeee]'>學習過的語言</h3>
 
         <div className='mt-16 flex flex-wrap gap-9 md:gap-9 justify-center xl:justify-start'>
           {skills.map((skill) => (
@@ -48,6 +48,14 @@ const About = () => {
             </div>
           ))}
         </div>
+      </div>
+
+      <div className='py-10 flex flex-col'>
+        <h3 className='subhead-text text-[#eeeeee]'>學習過的框架/套件</h3>
+      </div>
+
+      <div className='py-10 flex flex-col'>
+        <h3 className='subhead-text text-[#eeeeee]'>學習過的工具</h3>
       </div>
 
       <div className='py-16'>
