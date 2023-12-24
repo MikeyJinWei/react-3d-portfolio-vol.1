@@ -5,7 +5,7 @@ import { arrow } from '../assets/icons';
 const InfoBox = ({ text, link, btnText }) => (
   <div className='info-box'>
     <p className='font-medium sm: text-xl text-center'>{text}</p>
-    <Link to={link} className='neo-brutalism-white neo-btn'>
+    <Link to={link} className='neo-brutalism-light-grey neo-btn'>
       {btnText}
       <img src={arrow} className='w-4 h-4 object-contain' />
     </Link>
@@ -14,14 +14,14 @@ const InfoBox = ({ text, link, btnText }) => (
 
 const renderContent = {
   1: (
-    <h1 className='sm: text-xl sm:leading-snug text-center neo-brutalism-blue py-4 px-8 text-white mx-5'>
+    <h1 className='sm: text-xl sm:leading-snug text-center neo-brutalism-grey py-4 px-8 text-white mx-5'>
       Hi, 我是 <span className='font-semibold'>Mikey</span> 👋
       <br />
       我是一名前端開發人員
     </h1>
   ),
   2: (
-    <h1 className='sm: text-xl sm:leading-snug text-center neo-brutalism-blue py-4 px-8 text-white mx-5'>
+    <h1 className='sm: text-xl sm:leading-snug text-center neo-brutalism-grey py-4 px-8 text-white mx-5'>
       我自學前端開發的技術並且，
       <br />
       <span className='font-semibold gold-gradient_text'>每天</span>
