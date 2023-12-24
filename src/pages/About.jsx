@@ -2,7 +2,7 @@ import React from 'react';
 import {
   experiences,
   frameworksOrPkgs,
-  languageSkills,
+  languages,
   tools,
 } from '../constants/index';
 import {
@@ -32,23 +32,23 @@ const About = () => {
         <h3 className='subhead-text text-[#eeeeee]'>學習過的語言</h3>
 
         <div className='mt-16 flex flex-wrap gap-9 md:gap-9 justify-center xl:justify-start'>
-          {languageSkills.map((languageSkill) => (
-            <div key={languageSkill.name} className=''>
+          {languages.map((language) => (
+            <div key={language.name} className=''>
               <div className='block-container w-16 h-16 md:w-20 md:h-20'>
                 <div className='btn-back rounded-xl' />
                 <div className='btn-front rounded-xl flex justify-evenly items-center'>
                   <img
-                    src={languageSkill.imageUrl}
-                    alt={languageSkill.name}
+                    src={language.imageUrl}
+                    alt={language.name}
                     className='w-1/2 h-1/2 object-contain'
                   />
                 </div>
               </div>
               <div
-                key={languageSkill.name}
+                key={language.name}
                 className='flex justify-center flex-wrap w-16 md:w-20 mt-1.5 text-center text-xs md:text-sm text-[#eeeeee]'
               >
-                <p className=''>{languageSkill.name}</p>
+                <p className=''>{language.name}</p>
               </div>
             </div>
           ))}
@@ -109,10 +109,10 @@ const About = () => {
 
       <div className='py-16'>
         <h3 className='subhead-text'>工作經驗</h3>
-        <div className='mt-5 flex flex-col gap-3 text-slate-400'>
+        <div className='mt-5 flex flex-col gap-3 text-slate-300'>
           <p>
-            I've worked with all sorts of companies, leveling up my skills and
-            teaming up with smart people. Here's the rundown:
+            我認真看待每一份工作，秉持著「見賢思齊，
+            見不賢而內自省」的心態；面對工作，我偏好理性的思考，並在溝通及考量各種因素後做出最佳的選擇：
           </p>
         </div>
         <div className='mt-12 flex'>

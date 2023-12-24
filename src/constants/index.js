@@ -1,4 +1,10 @@
-import { meta, shopify, starbucks, tesla } from '../assets/images';
+import {
+  texas_roadhouse,
+  meta,
+  shopify,
+  starbucks,
+  tesla,
+} from '../assets/images';
 import {
   car,
   contact,
@@ -39,7 +45,7 @@ import {
   reactrouterdom,
 } from '../assets/icons';
 
-export const languageSkills = [
+export const languages = [
   {
     imageUrl: html,
     name: 'HTML',
@@ -165,6 +171,19 @@ export const tools = [
 ];
 
 export const experiences = [
+  {
+    title: 'Texas Roadhouse 外場服務生',
+    company_name: 'Texas Roadhouse',
+    icon: texas_roadhouse,
+    iconBg: '#C8A173',
+    date: '2018.09 - 2019.02',
+    points: [
+      'Developing and maintaining web applications using React.js and other related technologies.',
+      'Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.',
+      'Implementing responsive design and ensuring cross-browser compatibility.',
+      'Participating in code reviews and providing constructive feedback to other developers.',
+    ],
+  },
   {
     title: 'React.js Developer',
     company_name: 'Starbucks',
