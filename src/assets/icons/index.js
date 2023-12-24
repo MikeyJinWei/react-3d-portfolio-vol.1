@@ -21,6 +21,7 @@ import bootstrap from './bootstrap.svg';
 import tailwindcss from './tailwindcss.svg';
 import figma from './figma.svg';
 import zeabur from './zeabur.svg';
+import reactrouterdom from './reactrouterdom_light.svg';
 import npm from './npm.svg';
 import yarn from './yarn.svg';
 import notion from './notion.svg';
@@ -63,6 +64,7 @@ export {
   tailwindcss,
   figma,
   zeabur,
+  reactrouterdom,
   npm,
   yarn,
   notion,

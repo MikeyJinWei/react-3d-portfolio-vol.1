@@ -36,9 +36,10 @@ import {
   yarn,
   notion,
   vscode,
+  reactrouterdom,
 } from '../assets/icons';
 
-export const skills = [
+export const languageSkills = [
   {
     imageUrl: html,
     name: 'HTML',
@@ -55,49 +56,32 @@ export const skills = [
     type: 'Frontend',
   },
   {
-    imageUrl: bootstrap,
-    name: 'Bootstrap',
-    type: 'Frontend',
-  },
-  {
-    imageUrl: tailwindcss,
-    name: 'Tailwind CSS',
-    type: 'Frontend',
-  },
-  {
     imageUrl: javascript,
     name: 'JavaScript',
     type: 'Frontend',
   },
+];
+
+export const frameworksOrPkgs = [
   {
     imageUrl: react,
     name: 'React',
     type: 'Frontend',
   },
   {
-    imageUrl: git,
-    name: 'Git',
-    type: 'Version Control',
+    imageUrl: reactrouterdom,
+    name: 'React Router DOM',
+    type: 'Router',
   },
   {
-    imageUrl: github,
-    name: 'GitHub',
-    type: 'Version Control',
+    imageUrl: redux,
+    name: 'Redux Toolkit',
+    type: 'State Management',
   },
   {
-    imageUrl: swiper,
-    name: 'Swiper',
-    type: 'Carousel',
-  },
-  {
-    imageUrl: animateCss,
-    name: 'Animate.css',
-    type: 'Carousel',
-  },
-  {
-    imageUrl: motion,
-    name: 'Motion',
-    type: 'Animation',
+    imageUrl: tailwindcss,
+    name: 'Tailwind CSS',
+    type: 'Frontend',
   },
   {
     imageUrl: mui,
@@ -115,24 +99,33 @@ export const skills = [
     type: 'CSS-in-JS',
   },
   {
+    imageUrl: motion,
+    name: 'Motion',
+    type: 'Animation',
+  },
+  { imageUrl: bootstrap, name: 'Bootstrap', type: 'Frontend' },
+  {
+    imageUrl: swiper,
+    name: 'Swiper',
+    type: 'Carousel',
+  },
+  {
+    imageUrl: animateCss,
+    name: 'Animate.css',
+    type: 'Carousel',
+  },
+  {
     imageUrl: threejs,
     name: 'Three.js',
     type: 'Frontend',
   },
+];
+
+export const tools = [
   {
-    imageUrl: redux,
-    name: 'Redux Toolkit',
-    type: 'State Management',
-  },
-  {
-    imageUrl: figma,
-    name: 'Figma',
-    type: 'UI Tool',
-  },
-  {
-    imageUrl: zeabur,
-    name: 'Zeabur',
-    type: 'Deployment Service',
+    imageUrl: vscode,
+    name: 'VS Code',
+    type: 'Text Editor',
   },
   {
     imageUrl: npm,
@@ -145,14 +138,29 @@ export const skills = [
     type: 'Package Manager',
   },
   {
+    imageUrl: git,
+    name: 'Git',
+    type: 'Version Control',
+  },
+  {
+    imageUrl: github,
+    name: 'GitHub',
+    type: 'Version Control',
+  },
+  {
+    imageUrl: zeabur,
+    name: 'Zeabur',
+    type: 'Deployment Service',
+  },
+  {
     imageUrl: notion,
     name: 'Notion',
     type: 'Productivity Software',
   },
   {
-    imageUrl: vscode,
-    name: 'VS Code',
-    type: 'Text Editor',
+    imageUrl: figma,
+    name: 'Figma',
+    type: 'UI Tool',
   },
 ];
 

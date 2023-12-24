@@ -1,5 +1,10 @@
 import React from 'react';
-import { experiences, skills } from '../constants/index';
+import {
+  experiences,
+  frameworksOrPkgs,
+  languageSkills,
+  tools,
+} from '../constants/index';
 import {
   VerticalTimeline,
   VerticalTimelineElement,
@@ -27,23 +32,23 @@ const About = () => {
         <h3 className='subhead-text text-[#eeeeee]'>學習過的語言</h3>
 
         <div className='mt-16 flex flex-wrap gap-9 md:gap-9 justify-center xl:justify-start'>
-          {skills.map((skill) => (
-            <div key={skill.name} className=''>
+          {languageSkills.map((languageSkill) => (
+            <div key={languageSkill.name} className=''>
               <div className='block-container w-16 h-16 md:w-20 md:h-20'>
                 <div className='btn-back rounded-xl' />
                 <div className='btn-front rounded-xl flex justify-evenly items-center'>
                   <img
-                    src={skill.imageUrl}
-                    alt={skill.name}
+                    src={languageSkill.imageUrl}
+                    alt={languageSkill.name}
                     className='w-1/2 h-1/2 object-contain'
                   />
                 </div>
               </div>
               <div
-                key={skill.name}
+                key={languageSkill.name}
                 className='flex justify-center flex-wrap w-16 md:w-20 mt-1.5 text-center text-xs md:text-sm text-[#eeeeee]'
               >
-                <p className=''>{skill.name}</p>
+                <p className=''>{languageSkill.name}</p>
               </div>
             </div>
           ))}
@@ -52,10 +57,54 @@ const About = () => {
 
       <div className='py-10 flex flex-col'>
         <h3 className='subhead-text text-[#eeeeee]'>學習過的框架/套件</h3>
+        <div className='mt-16 flex flex-wrap gap-9 md:gap-9 justify-center xl:justify-start'>
+          {frameworksOrPkgs.map((frameworkOrPkg) => (
+            <div key={frameworkOrPkg.name} className=''>
+              <div className='block-container w-16 h-16 md:w-20 md:h-20'>
+                <div className='btn-back rounded-xl' />
+                <div className='btn-front rounded-xl flex justify-evenly items-center'>
+                  <img
+                    src={frameworkOrPkg.imageUrl}
+                    alt={frameworkOrPkg.name}
+                    className='w-1/2 h-1/2 object-contain'
+                  />
+                </div>
+              </div>
+              <div
+                key={frameworkOrPkg.name}
+                className='flex justify-center flex-wrap w-16 md:w-20 mt-1.5 text-center text-xs md:text-sm text-[#eeeeee]'
+              >
+                <p className=''>{frameworkOrPkg.name}</p>
+              </div>
+            </div>
+          ))}
+        </div>
       </div>
 
       <div className='py-10 flex flex-col'>
         <h3 className='subhead-text text-[#eeeeee]'>學習過的工具</h3>
+        <div className='mt-16 flex flex-wrap gap-9 md:gap-9 justify-center xl:justify-start'>
+          {tools.map((tool) => (
+            <div key={tool.name} className=''>
+              <div className='block-container w-16 h-16 md:w-20 md:h-20'>
+                <div className='btn-back rounded-xl' />
+                <div className='btn-front rounded-xl flex justify-evenly items-center'>
+                  <img
+                    src={tool.imageUrl}
+                    alt={tool.name}
+                    className='w-1/2 h-1/2 object-contain'
+                  />
+                </div>
+              </div>
+              <div
+                key={tool.name}
+                className='flex justify-center flex-wrap w-16 md:w-20 mt-1.5 text-center text-xs md:text-sm text-[#eeeeee]'
+              >
+                <p className=''>{tool.name}</p>
+              </div>
+            </div>
+          ))}
+        </div>
       </div>
 
       <div className='py-16'>
