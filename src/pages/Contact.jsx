@@ -3,6 +3,9 @@ import emailjs from '@emailjs/browser';
 import { Canvas } from '@react-three/fiber';
 import Loader from '../components/Loader';
 import Fox from '../models/Fox';
+
+import Rubik from '../models/Rubik';
+
 import useAlert from '../hooks/useAlert';
 import Alert from '../components/Alert';
 
@@ -10,7 +13,7 @@ const Contact = () => {
   const formRef = useRef(null);
   const [form, setForm] = useState({ name: '', email: '', message: '' });
   const [isLoading, setIsLoading] = useState(false);
-  const [currentAnimation, setCurrentAnimation] = useState('idle');
+  const [currentAnimation, setCurrentAnimation] = useState('Static pose');
 
   const { alert, showAlert, hideAlert } = useAlert();
 
@@ -23,14 +26,14 @@ const Contact = () => {
     });
   };
 
-  const handleFocus = () => setCurrentAnimation('walk');
+  const handleFocus = () => setCurrentAnimation('Armature|Loop');
 
-  const handleBlur = () => setCurrentAnimation('idle');
+  const handleBlur = () => setCurrentAnimation('Static pose');
 
   const handleSubmit = (e) => {
     e.preventDefault();
     setIsLoading(true);
-    setCurrentAnimation('hit');
+    setCurrentAnimation('Armature|Pattern');
 
     emailjs
       .send(
@@ -63,7 +66,7 @@ const Contact = () => {
       })
       .catch((error) => {
         setIsLoading(false);
-        setCurrentAnimation('idle');
+        setCurrentAnimation('Static pose');
         console.log(error);
         // TODO: show error message
         showAlert({
@@ -147,13 +150,22 @@ const Contact = () => {
           }}
         >
           <directionalLight intensity={2.5} position={[0, 0, 1]} />
-          <ambientLight intensity={0.5} />
+          <ambientLight intensity={0.7} />
           <Suspense fallback={<Loader />}>
-            <Fox
+            {/* <Fox
               currentAnimation={currentAnimation}
               position={[0.5, 0.35, 0]}
               rotation={[12.6, -0.6, 0]}
               scale={[0.5, 0.5, 0.5]}
+            /> */}
+            <Rubik
+              currentAnimation={currentAnimation}
+              // position={[0.5, 0.35, 0]}
+              // position={[-1, -0.6, 0]}
+              position={[-0.75, -0.5, 0]}
+              // rotation={[12.6, -0.6, 0]}
+              rotation={[13.21, -0.88, 0.08]}
+              scale={[3.5, 3.5, 3.5]}
             />
           </Suspense>
         </Canvas>
