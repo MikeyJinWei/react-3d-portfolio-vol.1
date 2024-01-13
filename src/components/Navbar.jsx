@@ -14,7 +14,9 @@ const Navbar = () => {
         <NavLink
           to='/about'
           className={({ isActive }) =>
-            isActive ? 'text-indigo-600' : 'text-[#F9F6F0] hover:text-cyan-400'
+            isActive
+              ? 'text-indigo-500'
+              : 'text-[#F9F6F0] hover:text-indigo-300'
           }
         >
           關於我
@@ -22,7 +24,9 @@ const Navbar = () => {
         <NavLink
           to='/projects'
           className={({ isActive }) =>
-            isActive ? 'text-indigo-600' : 'text-[#F9F6F0] hover:text-cyan-400'
+            isActive
+              ? 'text-indigo-500'
+              : 'text-[#F9F6F0] hover:text-indigo-300'
           }
         >
           作品集
@@ -30,7 +34,9 @@ const Navbar = () => {
         <NavLink
           to='/contact'
           className={({ isActive }) =>
-            isActive ? 'text-indigo-600' : 'text-[#F9F6F0] hover:text-cyan-400'
+            isActive
+              ? 'text-indigo-500'
+              : 'text-[#F9F6F0] hover:text-indigo-300'
           }
         >
           聯絡
