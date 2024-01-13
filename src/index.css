@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Work+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Courgette&family=Klee+One:wght@400;600&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -10,7 +10,7 @@
 }
 
 body {
-  font-family: "Work Sans", sans-serif;
+  font-family: 'Poppins',"Comic Neue", "Klee One", sans-serif;
 }
 
 body:has(.card[data-color="blue"]:hover) {
@@ -28,11 +28,16 @@ body:has(.card[data-color="green"]:hover) {
 
   .head-text {
     
-    @apply sm:text-5xl text-3xl font-semibold text-[#eeeeee] sm:leading-snug font-poppins;
+    @apply sm:text-5xl text-3xl font-semibold text-[#FDF4E3] sm:leading-snug;
   }
 
   .subhead-text {
-    @apply font-semibold sm:text-3xl text-xl relative font-poppins text-[#eeeeee];
+    @apply font-semibold sm:text-3xl text-xl relative text-[#FDF4E3];
+  }
+
+  /*  */
+  .logo-text {
+    @apply font-[courgette];
   }
 
   .blue-gradient_text {
@@ -44,7 +49,7 @@ body:has(.card[data-color="green"]:hover) {
   }
 
   .input {
-    @apply bg-white border border-gray-200 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 mt-2.5 font-normal shadow-card;
+    @apply bg-[#FFFFF5] border border-gray-200 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 mt-2.5 font-normal shadow-card;
   }
 
   .textarea {
@@ -52,7 +57,7 @@ body:has(.card[data-color="green"]:hover) {
   }
 
   .btn {
-    @apply text-white bg-gradient-to-r from-[#00c6ff] to-[#0072ff] focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center;
+    @apply text-white bg-gradient-to-r from-[#00c6ff] to-[#0072ff] focus:ring-4 focus:outline-none focus:ring-blue-300 font-semibold rounded-lg text-xl w-full sm:w-auto px-5 py-2.5 text-center;
   }
 
   .header {
@@ -68,7 +73,7 @@ body:has(.card[data-color="green"]:hover) {
   }
 
   .info-box {
-    @apply mx-5 relative flex text-white flex-col gap-3 max-w-2xl neo-brutalism-grey pt-4 pb-12 px-8;
+    @apply mx-5 relative flex text-[#FDF4E3] flex-col gap-3 max-w-2xl neo-brutalism-grey pt-4 pb-12 px-8;
   }
 
   .neo-btn {
@@ -80,7 +85,7 @@ body:has(.card[data-color="green"]:hover) {
   }
 
   .cta-text {
-    @apply text-[#eeeeee] font-extrabold flex-1 text-3xl max-md:text-center;
+    @apply text-[#FDF4E3] font-extrabold flex-1 text-3xl max-md:text-center;
   }
 }
 

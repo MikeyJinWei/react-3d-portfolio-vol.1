@@ -81,13 +81,13 @@ const Contact = () => {
     <section className='relative flex lg:flex-row flex-col max-container bg-[#202023] h-full lg:h-screen'>
       {alert.show && <Alert {...alert} />}
       <div className='flex-1 min-w-[50%] flex flex-col'>
-        <h1 className='head-text text-[#eeeeee]'>與我聯絡</h1>
+        <h1 className='head-text text-[#FFFFF5]'>與我聯絡</h1>
 
         <form
           onSubmit={handleSubmit}
           className='w-full flex flex-col gap-7 mt-14'
         >
-          <label className='text-[#eeeeee] font-semibold'>
+          <label className='font-semibold text-xl text-[#FFFFF5] '>
             姓名
             <input
               type='text'
@@ -101,7 +101,7 @@ const Contact = () => {
               onBlur={handleBlur}
             />
           </label>
-          <label className='text-[#eeeeee] font-semibold'>
+          <label className='text-[#FFFFF5] text-xl font-semibold'>
             Email
             <input
               type='email'
@@ -115,7 +115,7 @@ const Contact = () => {
               onBlur={handleBlur}
             />
           </label>
-          <label className='text-[#eeeeee] font-semibold'>
+          <label className='text-[#FFFFF5] text-xl font-semibold'>
             留言
             <textarea
               type='text'
@@ -160,11 +160,8 @@ const Contact = () => {
             /> */}
             <Rubik
               currentAnimation={currentAnimation}
-              // position={[0.5, 0.35, 0]}
-              // position={[-1, -0.6, 0]}
-              position={[-0.75, -0.5, 0]}
-              // rotation={[12.6, -0.6, 0]}
-              rotation={[13.21, -0.88, 0.08]}
+              position={[-1.2, -0.5, 0]}
+              rotation={[13.23, -0.88, 0.08]}
               scale={[3.5, 3.5, 3.5]}
             />
           </Suspense>

@@ -6,17 +6,19 @@ const Navbar = () => {
     <header className='header'>
       <NavLink
         to='/'
-        className='w-16 h-10 rounded-lg bg-[#F9F6F0] items-center justify-center flex font-bold shadow-md'
+        className='w-16 h-10 rounded-lg bg-[#FFFFF5] items-center justify-center flex font-bold shadow-md'
       >
-        <p className='blue-gradient_text'>Mikey</p>
+        <p className='blue-gradient_text text-xl font-semibold logo-text'>
+          Mikey
+        </p>
       </NavLink>
       <nav className='flex text-lg gap-7 font-medium'>
         <NavLink
           to='/about'
           className={({ isActive }) =>
             isActive
-              ? 'text-indigo-500'
-              : 'text-[#F9F6F0] hover:text-indigo-300'
+              ? 'text-xl font-semibold text-indigo-500 '
+              : 'text-xl font-semibold text-[#FDF4E3] hover:text-indigo-300'
           }
         >
           關於我
@@ -25,8 +27,8 @@ const Navbar = () => {
           to='/projects'
           className={({ isActive }) =>
             isActive
-              ? 'text-indigo-500'
-              : 'text-[#F9F6F0] hover:text-indigo-300'
+              ? 'text-xl font-semibold text-indigo-500 '
+              : 'text-xl font-semibold text-[#FDF4E3] hover:text-indigo-300'
           }
         >
           作品集
@@ -35,8 +37,8 @@ const Navbar = () => {
           to='/contact'
           className={({ isActive }) =>
             isActive
-              ? 'text-indigo-500'
-              : 'text-[#F9F6F0] hover:text-indigo-300'
+              ? 'text-xl font-semibold text-indigo-500 '
+              : 'text-xl font-semibold text-[#FDF4E3] hover:text-indigo-300'
           }
         >
           聯絡
