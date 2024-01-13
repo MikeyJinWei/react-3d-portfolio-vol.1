@@ -150,7 +150,7 @@ const Contact = () => {
           }}
         >
           <directionalLight intensity={2.5} position={[0, 0, 1]} />
-          <ambientLight intensity={0.7} />
+          <ambientLight intensity={1} />
           <Suspense fallback={<Loader />}>
             {/* <Fox
               currentAnimation={currentAnimation}
