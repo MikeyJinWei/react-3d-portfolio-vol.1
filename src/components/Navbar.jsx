@@ -6,7 +6,7 @@ const Navbar = () => {
     <header className='header'>
       <NavLink
         to='/'
-        className='w-16 h-10 rounded-lg bg-[#eeeeee] items-center justify-center flex font-bold shadow-md'
+        className='w-16 h-10 rounded-lg bg-[#F9F6F0] items-center justify-center flex font-bold shadow-md'
       >
         <p className='blue-gradient_text'>Mikey</p>
       </NavLink>
@@ -14,7 +14,7 @@ const Navbar = () => {
         <NavLink
           to='/about'
           className={({ isActive }) =>
-            isActive ? 'text-blue-500' : 'text-[#eeeeee]'
+            isActive ? 'text-indigo-600' : 'text-[#F9F6F0] hover:text-cyan-400'
           }
         >
           關於我
@@ -22,7 +22,7 @@ const Navbar = () => {
         <NavLink
           to='/projects'
           className={({ isActive }) =>
-            isActive ? 'text-blue-500' : 'text-[#eeeeee]'
+            isActive ? 'text-indigo-600' : 'text-[#F9F6F0] hover:text-cyan-400'
           }
         >
           作品集
@@ -30,7 +30,7 @@ const Navbar = () => {
         <NavLink
           to='/contact'
           className={({ isActive }) =>
-            isActive ? 'text-blue-500' : 'text-[#eeeeee]'
+            isActive ? 'text-indigo-600' : 'text-[#F9F6F0] hover:text-cyan-400'
           }
         >
           聯絡
