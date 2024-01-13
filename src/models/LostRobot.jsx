@@ -65,18 +65,18 @@ const LostRobot = ({
   const handleKeyDown = (e) => {
     if (e.key === 'ArrowLeft') {
       if (!isRotating) setIsRotating(true);
-      lostRobotRef.current.rotation.y += 0.01 * Math.PI;
+      lostRobotRef.current.rotation.y += 0.02 * Math.PI;
     } else if (e.key === 'ArrowRight') {
       if (!isRotating) setIsRotating(true);
-      lostRobotRef.current.rotation.y -= 0.01 * Math.PI;
+      lostRobotRef.current.rotation.y -= 0.02 * Math.PI;
+      rotationSpeed.current = -0.0125;
     }
   };
 
+  // handle key up
   const handleKeyUp = (e) => {
-    if (e.key === 'ArrowLeft') {
-      if (e.key === 'ArrowLeft' || e.key === 'ArrowRight') {
-        setIsRotating(false);
-      }
+    if (e.key === 'ArrowLeft' || e.key === 'ArrowRight') {
+      setIsRotating(false);
     }
   };
 
@@ -135,23 +135,37 @@ const LostRobot = ({
     }
   });
 
+  // rotation effect
   useEffect(() => {
     const canvas = gl.domElement;
 
     canvas.addEventListener('pointerdown', handlePointerDown);
     canvas.addEventListener('pointerup', handlePointerUp);
     canvas.addEventListener('pointermove', handlePointerMove);
-    canvas.addEventListener('keydown', handleKeyDown);
-    canvas.addEventListener('keyup', handleKeyUp);
+    document.addEventListener('keydown', handleKeyDown);
+    document.addEventListener('keyup', handleKeyUp);
 
     return () => {
       canvas.removeEventListener('pointerdown', handlePointerDown);
       canvas.removeEventListener('pointerup', handlePointerUp);
       canvas.removeEventListener('pointermove', handlePointerMove);
-      canvas.removeEventListener('keydown', handleKeyDown);
-      canvas.removeEventListener('keyup', handleKeyUp);
+      document.removeEventListener('keydown', handleKeyDown);
+      document.removeEventListener('keyup', handleKeyUp);
     };
-  }, [gl, viewport, handlePointerDown, handlePointerUp, handlePointerMove]);
+  }, [
+    gl,
+    viewport,
+    handlePointerDown,
+    handlePointerUp,
+    handlePointerMove,
+    handleKeyDown,
+    handleKeyDown,
+  ]);
+
+  // animation effect
+  useEffect(() => {
+    actions['Animation'].play();
+  }, []);
 
   return (
     <a.group ref={lostRobotRef} {...props} dispose={null}>
@@ -189,21 +203,21 @@ const LostRobot = ({
                   material={materials.Sphere}
                 />
               </group>
-              <group
+              {/* light effect */}
+              {/* <group
                 name='Light_8'
                 position={[-76.03, 179.407, 51.884]}
                 rotation={[1.19, 1.055, -1.611]}
                 scale={0.383}
               >
-                {/* light effect */}
-                {/* <mesh
+                <mesh
                   name='Object_16'
                   castShadow
                   receiveShadow
                   geometry={nodes.Object_16.geometry}
                   material={materials['Material.002']}
-                /> */}
-              </group>
+                />
+              </group> */}
               <group name='Tree_main_9' position={[0, 38.153, 0]} scale={0.417}>
                 <mesh
                   name='Object_18'
