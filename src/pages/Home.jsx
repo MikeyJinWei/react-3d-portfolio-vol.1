@@ -53,8 +53,8 @@ const Home = () => {
     let rotation = [0, 0, 0];
 
     if (window.innerWidth < 768) {
-      screenScale = [0.3, 0.3, 0.3];
-      screenPosition = [0, -30, -40];
+      screenScale = [0.27, 0.27, 0.27];
+      screenPosition = [0, -25, -40];
     } else {
       screenScale = [0.4, 0.4, 0.4];
       screenPosition = [0, -30, -40];
