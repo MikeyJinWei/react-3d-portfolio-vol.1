@@ -57,11 +57,6 @@ export const languages = [
     type: 'Frontend',
   },
   {
-    imageUrl: sass,
-    name: 'SCSS',
-    type: 'Frontend',
-  },
-  {
     imageUrl: javascript,
     name: 'JavaScript',
     type: 'Frontend',
@@ -128,6 +123,11 @@ export const frameworksOrPkgs = [
 ];
 
 export const tools = [
+  {
+    imageUrl: sass,
+    name: 'SCSS',
+    type: 'Frontend',
+  },
   {
     imageUrl: vscode,
     name: 'VS Code',
