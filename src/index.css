@@ -23,7 +23,7 @@ body:has(.card[data-color="green"]:hover) {
 
 @layer utilities {
   .max-container {
-    @apply max-w-6xl mx-auto sm:p-16 pb-12 !pt-[126px] px-8 min-h-[calc(100vh-80px)];
+    @apply max-w-7xl mx-auto sm:p-16 pb-12 !pt-[126px] px-8 min-h-[calc(100vh-80px)];
   }
 
   .head-text {
@@ -99,7 +99,7 @@ body:has(.card[data-color="green"]:hover) {
 
 .logo {
   border-radius: 8.889px;
-  background: #fff;
+  background: #ffffff;
   box-shadow: 0px 10px 35px -4px rgba(67, 83, 255, 0.15),
     0px 1.5px 4px -1px rgba(67, 83, 255, 0.2);
 }
@@ -121,8 +121,9 @@ body:has(.card[data-color="green"]:hover) {
   transform-origin: bottom right;
   transform: rotateZ(15deg);
   will-change: transform;
-  box-shadow: 16px 0 40px #868B8E;
   box-shadow: 16px 0 40px #4c4f51;
+  box-shadow: 16px 0 40px #868B8E;
+  box-shadow: 16px 0 40px #647C90;
 }
 
 .block-container .btn-back-red {
@@ -159,8 +160,7 @@ body:has(.card[data-color="green"]:hover) {
   z-index: 1;
   width: inherit;
   height: inherit;
-  background-color: #ffffff68;
-  background-color: #eeeeee7a;
+  background-color: #E7F2F8;
   -webkit-backdrop-filter: blur(20px);
   backdrop-filter: blur(20px);
   transition: 250ms;
@@ -188,9 +188,9 @@ body:has(.card[data-color="green"]:hover) {
 }
 
 .neo-brutalism-white {
-  background: #fff;
-  border: #fff;
-  box-shadow: 0.6vmin 0.6vmin #fff, 1vmin 1vmin #d2e4ff, 1vmin 1vmin #d2e4ff,
+  background: #ffffff;
+  border: #ffffff;
+  box-shadow: 0.6vmin 0.6vmin #ffffff, 1vmin 1vmin #d2e4ff, 1vmin 1vmin #d2e4ff,
     0.65vmin 1vmin #d2e4ff, 1vmin 0.65vmin #d2e4ff;
 }
 

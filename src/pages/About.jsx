@@ -33,7 +33,7 @@ const About = () => {
 
         <div className='mt-16 flex flex-wrap gap-9 md:gap-9 justify-center xl:justify-start'>
           {languages.map((language) => (
-            <div key={language.name} className=''>
+            <div key={language.name}>
               <div className='block-container w-16 h-16 md:w-20 md:h-20'>
                 <div className='btn-back rounded-xl' />
                 <div className='btn-front rounded-xl flex justify-evenly items-center'>
