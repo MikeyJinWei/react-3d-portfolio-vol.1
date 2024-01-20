@@ -13,7 +13,7 @@ const Contact = () => {
   const formRef = useRef(null);
   const [form, setForm] = useState({ name: '', email: '', message: '' });
   const [isLoading, setIsLoading] = useState(false);
-  const [currentAnimation, setCurrentAnimation] = useState('Static pose');
+  const [currentAnimation, setCurrentAnimation] = useState('Armature|Loop');
 
   const { alert, showAlert, hideAlert } = useAlert();
 
@@ -28,7 +28,7 @@ const Contact = () => {
 
   const handleFocus = () => setCurrentAnimation('Armature|Loop');
 
-  const handleBlur = () => setCurrentAnimation('Static pose');
+  const handleBlur = () => setCurrentAnimation('Armature|Loop');
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -80,7 +80,7 @@ const Contact = () => {
   return (
     <section className='relative flex lg:flex-row flex-col max-container bg-[#202023] h-full lg:h-screen'>
       {alert.show && <Alert {...alert} />}
-      <div className='flex-1 min-w-[50%] flex flex-col'>
+      <div className='min-w-[50%] flex flex-col'>
         <h1 className='head-text text-[#FFFFF5]'>與我聯絡</h1>
 
         <form
@@ -140,7 +140,7 @@ const Contact = () => {
           </button>
         </form>
       </div>
-      <div className='lg:w-1/2 w-full lg:h-auto md:h-[550px] h-[350px]'>
+      <div className='flex justify-center lg:w-1/2 w-full lg:h-auto md:h-[550px] h-[350px]'>
         <Canvas
           camera={{
             position: [0, 0, 5],
@@ -160,9 +160,9 @@ const Contact = () => {
             /> */}
             <Rubik
               currentAnimation={currentAnimation}
-              position={[-1.2, -0.5, 0]}
-              rotation={[13.23, -0.88, 0.08]}
-              scale={[3.5, 3.5, 3.5]}
+              position={[-0.1, 0.65, 0]}
+              rotation={[0.7, -0.88, 0.08]}
+              scale={[1, 1, 1]}
             />
           </Suspense>
         </Canvas>

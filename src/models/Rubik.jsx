@@ -33,7 +33,7 @@ const Rubik = ({ currentAnimation, ...props }) => {
                   name='Armature'
                   position={[0.285, 0.285, -0.285]}
                   rotation={[-Math.PI / 2, 0, 0]}
-                  scale={0.1}
+                  scale={0.38}
                 >
                   <group name='Object_5'>
                     <primitive object={nodes._rootJoint} />
