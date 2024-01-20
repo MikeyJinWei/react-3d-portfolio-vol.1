@@ -12,13 +12,13 @@ const Navbar = () => {
           Mikey
         </p>
       </NavLink>
-      <nav className='flex text-lg gap-7 font-medium'>
+      <nav className='flex md:text-xl sm:text-lg gap-7 font-medium'>
         <NavLink
           to='/about'
           className={({ isActive }) =>
             isActive
-              ? 'text-xl font-semibold text-indigo-500 '
-              : 'text-xl font-semibold text-[#FDF4E3] hover:text-indigo-300'
+              ? 'font-semibold text-indigo-500 '
+              : 'font-semibold text-[#FDF4E3] hover:text-indigo-300'
           }
         >
           關於我
@@ -27,8 +27,8 @@ const Navbar = () => {
           to='/projects'
           className={({ isActive }) =>
             isActive
-              ? 'text-xl font-semibold text-indigo-500 '
-              : 'text-xl font-semibold text-[#FDF4E3] hover:text-indigo-300'
+              ? 'font-semibold text-indigo-500 '
+              : 'font-semibold text-[#FDF4E3] hover:text-indigo-300'
           }
         >
           作品集
@@ -37,8 +37,8 @@ const Navbar = () => {
           to='/contact'
           className={({ isActive }) =>
             isActive
-              ? 'text-xl font-semibold text-indigo-500 '
-              : 'text-xl font-semibold text-[#FDF4E3] hover:text-indigo-300'
+              ? 'font-semibold text-indigo-500 '
+              : 'font-semibold text-[#FDF4E3] hover:text-indigo-300'
           }
         >
           聯絡
