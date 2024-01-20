@@ -27,7 +27,6 @@ body:has(.card[data-color="green"]:hover) {
   }
 
   .head-text {
-    
     @apply sm:text-5xl text-3xl font-semibold text-[#FDF4E3] sm:leading-snug;
   }
 
@@ -35,7 +34,6 @@ body:has(.card[data-color="green"]:hover) {
     @apply font-semibold sm:text-3xl text-xl relative text-[#FDF4E3];
   }
 
-  /*  */
   .logo-text {
     @apply font-[courgette];
   }
@@ -210,4 +208,36 @@ body:has(.card[data-color="green"]:hover) {
   background: #EDE4E3;
   border: #EDE4E3;
   box-shadow: 0.6vmin 0.6vmin #C0C0C0;
+}
+
+.typewriter-container {
+  display: inline-block;
+}
+
+.typewriter {
+  position: relative;
+  display: inline-block;
+  border-right: 2px solid;
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  animation: 
+      type 3s steps(25) infinite alternate,
+      cursor 0.4s step-end infinite alternate;
+}
+
+@keyframes cursor {
+  50% {
+    border-color: transparent;
+  }
+}
+
+@keyframes type {
+  from {
+    width: 0;
+  }
+  
+  to {
+    width: 100%;
+  }
 }
