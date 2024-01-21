@@ -21,7 +21,7 @@ const renderContent = {
     //   </h1>
     // </div>
     <div className='typewriter-container'>
-      <h1 className='sm:text-3xl text-center text-[#FDF4E3] typewriter'>
+      <h1 className='text-2xl md:text-3xl text-center text-[#FDF4E3] typewriter'>
         Hi 我是 <span className='font-semibold gold-gradient_text'>Mikey</span>
         <span className='pr-6 text-[#FDF4E3]'>👋</span>
       </h1>
