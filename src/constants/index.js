@@ -18,11 +18,13 @@ import {
   linkedin,
   mongodb,
   swiper,
+  reactsplide,
   animateCss,
   motion,
   mui,
   antd,
   styledcomponents,
+  emotion,
   nextjs,
   nodejs,
   pricewise,
@@ -100,6 +102,11 @@ export const frameworksOrPkgs = [
     type: 'CSS-in-JS',
   },
   {
+    imageUrl: emotion,
+    name: 'Emotion',
+    type: 'CSS-in-JS',
+  },
+  {
     imageUrl: motion,
     name: 'Motion',
     type: 'Animation',
@@ -108,6 +115,11 @@ export const frameworksOrPkgs = [
   {
     imageUrl: swiper,
     name: 'Swiper',
+    type: 'Carousel',
+  },
+  {
+    imageUrl: reactsplide,
+    name: 'React Splide',
     type: 'Carousel',
   },
   {

@@ -6,11 +6,13 @@ import html from './html.svg';
 import javascript from './javascript.svg';
 import mongodb from './mongodb.svg';
 import swiper from './swiper.svg';
+import reactsplide from './react-splide.svg';
 import animateCss from './animate.css.svg';
 import motion from './motion.svg';
 import mui from './mui.svg';
 import antd from './antd.svg';
 import styledcomponents from './styled-components.svg';
+import emotion from './emotion.svg';
 import threejs from './threejs.svg';
 import nextjs from './nextjs.svg';
 import nodejs from './nodejs.svg';
@@ -49,11 +51,13 @@ export {
   javascript,
   mongodb,
   swiper,
+  reactsplide,
   animateCss,
   motion,
   mui,
   antd,
   styledcomponents,
+  emotion,
   threejs,
   nextjs,
   nodejs,
