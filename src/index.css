@@ -43,7 +43,7 @@ body:has(.card[data-color="green"]:hover) {
   }
 
   .gold-gradient_text {
-    @apply bg-gradient-to-r from-[#F3CC3C] to-[#D19A30] bg-clip-text text-transparent;
+    @apply bg-gradient-to-r from-[#F3CC3C] to-[#D19A30] to-[#aa6c4d] bg-clip-text text-transparent;
   }
 
   .input {
@@ -119,6 +119,7 @@ body:has(.card[data-color="green"]:hover) {
   transform-origin: bottom right;
   transform: rotateZ(15deg);
   will-change: transform;
+  box-shadow: 16px 0 40px #000000;
   box-shadow: 16px 0 40px #4c4f51;
   box-shadow: 16px 0 40px #868B8E;
   box-shadow: 16px 0 40px #647C90;
@@ -210,6 +211,7 @@ body:has(.card[data-color="green"]:hover) {
   box-shadow: 0.6vmin 0.6vmin #C0C0C0;
 }
 
+/* animation */
 .typewriter-container {
   display: inline-block;
 }
