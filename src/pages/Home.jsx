@@ -53,7 +53,7 @@ const Home = () => {
     let rotation = [0, 0, 0];
 
     if (window.innerWidth < 768) {
-      screenScale = [0.27, 0.27, 0.27];
+      screenScale = [0.3, 0.3, 0.3];
       screenPosition = [0, -25, -40];
     } else {
       screenScale = [0.4, 0.4, 0.4];
@@ -89,7 +89,7 @@ const Home = () => {
 
   return (
     <section className='w-full h-screen relative'>
-      <div className='absolute bottom-14 left-0 right-0 z-10 flex items-center justify-center'>
+      <div className='absolute bottom-20 left-0 right-0 z-10 flex items-center justify-center'>
         <HomeInfo currentStage={currentStage} />
       </div>
       <Canvas
