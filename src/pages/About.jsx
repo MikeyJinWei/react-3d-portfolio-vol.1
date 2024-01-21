@@ -154,7 +154,7 @@ const About = () => {
                   {experience.points.map((point, index) => (
                     <li
                       key={`experience-point-${index}`}
-                      className='text-[#eeeeee] font-normal pl-1 text-sm'
+                      className='text-[#eeeeee] font-normal pl-1 text-base'
                     >
                       {point}
                     </li>
