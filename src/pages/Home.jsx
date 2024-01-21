@@ -89,7 +89,7 @@ const Home = () => {
 
   return (
     <section className='w-full h-screen relative'>
-      <div className='absolute bottom-20 left-0 right-0 z-10 flex items-center justify-center'>
+      <div className='absolute bottom-24 left-0 right-0 z-10 flex items-center justify-center'>
         <HomeInfo currentStage={currentStage} />
       </div>
       <Canvas
