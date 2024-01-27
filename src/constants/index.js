@@ -7,7 +7,11 @@ import {
   roundabout,
   key_coffee,
   taking,
+  taking_screenshot,
+  recipe_screenshot,
+  portfolio_screenshot,
 } from '../assets/images';
+
 import {
   car,
   contact,
@@ -266,51 +270,30 @@ export const socialLinks = [
 
 export const projects = [
   {
-    iconUrl: pricewise,
-    theme: 'btn-back-red',
-    name: 'Amazon Price Tracker',
+    // iconUrl: taking,
+    // theme: 'btn-back-green',
+    img: taking_screenshot,
+    name: '竹慶建設官網',
     description:
-      'Developed a web application that tracks and notifies users of price changes for products on Amazon, helping users find the best deals.',
-    link: 'https://github.com/adrianhajdin/pricewise',
+      '這是我為前公司過渡期開發的官網專案，當時，公司忙著處理建案預售工作，沒什麼閒暇時間能處理這塊業務，大家也對這塊領域沒那麼了解。因此，我向經理自告奮勇，和一名設計系朋友協力在一個月半完成這個作品⋯⋯',
+    link: 'https://github.com/MikeyJinWei/ta-king.github.io.git',
   },
   {
-    iconUrl: threads,
-    theme: 'btn-back-green',
-    name: 'Full Stack Threads Clone',
+    // iconUrl: recipe,
+    // theme: 'btn-back-red',
+    img: recipe_screenshot,
+    name: 'Spoonacular Recipe App',
     description:
-      'Created a full-stack replica of the popular discussion platform "Threads," enabling users to post and engage in threaded conversations.',
-    link: 'https://github.com/adrianhajdin/threads',
+      '學習 React 大致了解最基礎的 Hook: useState, useEffect 及 Props 的觀念後，我想試著開發一個 API 專案。靈機一動，突然想到假如愛料理的媽媽在忘記時，能方便地搜尋、觀看資料，想必是是件很方便的事。於是，我參考網路上的範例，並試著學習閱讀 API Doc 渲染出應對的資料⋯⋯',
+    link: 'https://github.com/MikeyJinWei/recipe-app.git',
   },
   {
-    iconUrl: car,
-    theme: 'btn-back-blue',
-    name: 'Car Finding App',
+    // iconUrl: threads,
+    // theme: 'btn-back-green',
+    img: portfolio_screenshot,
+    name: 'React 3D Portfolio',
     description:
-      'Designed and built a mobile app for finding and comparing cars on the market, streamlining the car-buying process.',
-    link: 'https://github.com/adrianhajdin/project_next13_car_showcase',
-  },
-  {
-    iconUrl: snapgram,
-    theme: 'btn-back-pink',
-    name: 'Full Stack Instagram Clone',
-    description:
-      'Built a complete clone of Instagram, allowing users to share photos and connect with friends in a familiar social media environment.',
-    link: 'https://github.com/adrianhajdin/social_media_app',
-  },
-  {
-    iconUrl: estate,
-    theme: 'btn-back-black',
-    name: 'Real-Estate Application',
-    description:
-      'Developed a web application for real estate listings, facilitating property searches and connecting buyers with sellers.',
-    link: 'https://github.com/adrianhajdin/projects_realestate',
-  },
-  {
-    iconUrl: summiz,
-    theme: 'btn-back-yellow',
-    name: 'AI Summarizer Application',
-    description:
-      'App that leverages AI to automatically generate concise & informative summaries from lengthy text content, or blogs.',
-    link: 'https://github.com/adrianhajdin/project_ai_summarizer',
+      '某天在 YouTube 吸收知識時，我無意見看到一個酷炫的 3D 圖教學，於是我把手邊的專案完成 commit, push 後，就點開了教學影片學習⋯⋯',
+    link: 'https://github.com/MikeyJinWei/react-3d-portfolio-vol.1.git',
   },
 ];

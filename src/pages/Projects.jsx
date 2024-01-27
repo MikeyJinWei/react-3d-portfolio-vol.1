@@ -20,18 +20,30 @@ const Projects = () => {
         </p>
       </div>
 
-      <div className='flex flex-wrap my-20 gap-16'>
+      <div className='flex flex-wrap my-20 gap-x-48 gap-y-16 xl:justify-center'>
         {projects.map((project) => (
-          <div className='lg:w-[400px] w-full' key={project.name}>
-            <div className='block-container w-12 h-12'>
-              <div className={`btn-back rounded-xl ${project.theme}`} />
+          <div className='lg:w-[320px] w-full' key={project.name}>
+            <div className='block-container'>
+              <Link
+                to={project.link}
+                target='_blank'
+                rel='noopener noreferrer'
+                className=''
+              >
+                <img
+                  src={project.img}
+                  alt='Project Image'
+                  className='w-96 text-[#EEEEEE] hover:opacity-60 transition-all duration-700 ease-out'
+                />
+              </Link>
+              {/* <div className={`btn-back rounded-xl ${project.theme}`} />
               <div className='btn-front rounded-xl flex justify-center items-center'>
                 <img
                   src={project.iconUrl}
                   alt='Project Icon'
                   className='w-1/2 h-1/2 object-contain'
                 />
-              </div>
+              </div> */}
             </div>
             <div className='mt-5 flex flex-col'>
               <h4 className='text-3xl font-semibold text-[#eeeeee]'>
@@ -43,15 +55,15 @@ const Projects = () => {
                   to={project.link}
                   target='_blank'
                   rel='noopener noreferrer'
-                  className='font-semibold text-blue-600'
+                  className='font-semibold text-blue-600 hover:text-indigo-300 transition-all duration-300 ease-in-out'
                 >
-                  Live Link
+                  Live Link →
                 </Link>
-                <img
+                {/* <img
                   src={arrow}
                   alt='arrow'
                   className='w-4 h-4 object-contain'
-                />
+                /> */}
               </div>
             </div>
           </div>

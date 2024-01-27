@@ -55,7 +55,7 @@ body:has(.card[data-color="green"]:hover) {
   }
 
   .btn {
-    @apply text-white bg-gradient-to-r from-[#00c6ff] to-[#0072ff] focus:ring-4 focus:outline-none focus:ring-blue-300 font-semibold rounded-lg text-xl w-full sm:w-auto px-5 py-2.5 text-center;
+    @apply text-white bg-gradient-to-r from-[#00c6ff] to-[#0072ff] hover:from-[#eeeeee] hover:to-[#00c6ff] focus:ring-4 focus:outline-none focus:ring-blue-300 transition-all duration-1000 ease-in-out font-semibold rounded-lg text-xl w-full sm:w-auto px-5 py-2.5 text-center;
   }
 
   .header {
@@ -119,9 +119,9 @@ body:has(.card[data-color="green"]:hover) {
   transform-origin: bottom right;
   transform: rotateZ(15deg);
   will-change: transform;
-  box-shadow: 16px 0 40px #000000;
+  /* box-shadow: 16px 0 40px #000000;
   box-shadow: 16px 0 40px #4c4f51;
-  box-shadow: 16px 0 40px #868B8E;
+  box-shadow: 16px 0 40px #868B8E; */
   box-shadow: 16px 0 40px #647C90;
 }
 
