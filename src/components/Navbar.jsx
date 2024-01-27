@@ -17,8 +17,8 @@ const Navbar = () => {
           to='/about'
           className={({ isActive }) =>
             isActive
-              ? 'font-semibold text-indigo-500 '
-              : 'font-semibold text-[#FDF4E3] hover:text-indigo-300'
+              ? 'font-semibold text-indigo-500'
+              : 'font-semibold text-[#FDF4E3] hover:text-indigo-300 transition-all ease-in-out duration-300'
           }
         >
           關於我
@@ -27,8 +27,8 @@ const Navbar = () => {
           to='/projects'
           className={({ isActive }) =>
             isActive
-              ? 'font-semibold text-indigo-500 '
-              : 'font-semibold text-[#FDF4E3] hover:text-indigo-300'
+              ? 'font-semibold text-indigo-500'
+              : 'font-semibold text-[#FDF4E3] hover:text-indigo-300 transition-all ease-in-out duration-300'
           }
         >
           作品集
@@ -37,8 +37,8 @@ const Navbar = () => {
           to='/contact'
           className={({ isActive }) =>
             isActive
-              ? 'font-semibold text-indigo-500 '
-              : 'font-semibold text-[#FDF4E3] hover:text-indigo-300'
+              ? 'font-semibold text-indigo-500'
+              : 'font-semibold text-[#FDF4E3] hover:text-indigo-300 transition-all ease-in-out duration-300'
           }
         >
           聯絡
