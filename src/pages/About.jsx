@@ -18,11 +18,11 @@ const About = () => {
       <h1 className='head-text text-[#FDF4E3]'>
         Hello 我是
         <span className='blue-gradient_text font-semibold drop-shadow'>
-          黃勁偉 (Mikey)
+          黃勁偉(Mikey)
         </span>
       </h1>
 
-      <div className='mt-5 flex flex-col gap-3 md:text-xl text-slate-300'>
+      <div className='mt-5 flex flex-col gap-3 sm:text-lg md:text-xl text-slate-300'>
         <p>
           我是一名前端開發者，在求學和就業的旅途中，我透過一次次的實作開始對網頁開發產生興趣，並每天致力於進步
         </p>
@@ -109,7 +109,7 @@ const About = () => {
 
       <div className='py-16'>
         <h3 className='subhead-text'>工作經驗</h3>
-        <div className='mt-5 flex flex-col gap-3 md:text-xl text-slate-300'>
+        <div className='mt-5 flex flex-col gap-3 sm:text-lg md:text-xl text-slate-300'>
           <p>
             我認真看待每一份工作，秉持著「見賢思齊」的心態；面對工作，我偏好理性的思考，並在溝通及考量各種因素後做出最佳的決策：
           </p>

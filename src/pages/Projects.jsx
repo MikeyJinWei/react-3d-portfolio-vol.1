@@ -13,13 +13,10 @@ const Projects = () => {
           Projects
         </span>
       </h1>
-      <div className='mt-5 flex flex-col gap-3 text-slate-500'>
+      <div className='mt-5 flex flex-col gap-3 sm:text-lg md:text-xl text-slate-300'>
         <p>
-          I've embarked on numerous projects throughout the years, but these are
-          the ones I hold closest to my heart. Many of them are open-source, so
-          if you come across something that piques your interest, feel free to
-          explore the codebase and contribute your ideas for further
-          enhancements. Your collaboration is highly valued!
+          在這段學習的旅程中，我透過一次次的專案作品學習，試著讓每個階段的作品越來越完善，歡迎點擊參觀我的
+          Source Code！另外，我也十分期待您的聯繫！
         </p>
       </div>
 
@@ -40,7 +37,7 @@ const Projects = () => {
               <h4 className='text-2xl font-poppins font-semibold text-[#eeeeee]'>
                 {project.name}
               </h4>
-              <p className='mt-2 text-slate-500'>{project.description}</p>
+              <p className='mt-2 text-slate-300'>{project.description}</p>
               <div className='mt-5 flex items-center gap-2 font-poppins'>
                 <Link
                   to={project.link}
