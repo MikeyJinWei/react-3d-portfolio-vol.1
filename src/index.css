@@ -10,7 +10,7 @@
 }
 
 body {
-  font-family: 'Poppins',"Comic Neue", "Klee One", sans-serif;
+  font-family: "Comic Neue", "Klee One",'Poppins', sans-serif;
 }
 
 body:has(.card[data-color="blue"]:hover) {
