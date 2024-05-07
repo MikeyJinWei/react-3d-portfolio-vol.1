@@ -160,7 +160,7 @@ const Contact = () => {
             /> */}
             <Rubik
               currentAnimation={currentAnimation}
-              position={[-0.1, 0.65, 0]}
+              position={[-0.1, 0.1, 0]}
               rotation={[0.7, -0.88, 0.08]}
               scale={[1, 1, 1]}
             />
