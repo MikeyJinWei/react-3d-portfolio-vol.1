@@ -41,6 +41,9 @@ import arrow from './arrow.svg';
 import contact from './contact.svg';
 import soundon from './soundon.png';
 import soundoff from './soundoff.png';
+import mysql from './mysql.svg';
+import postman from './postman.svg';
+import axios from './axios.png';
 
 export {
   css,
@@ -86,4 +89,7 @@ export {
   contact,
   soundon,
   soundoff,
+  mysql,
+  postman,
+  axios,
 };
