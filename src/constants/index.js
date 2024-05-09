@@ -87,12 +87,12 @@ export const frameworksOrPkgs = [
   },
   {
     imageUrl: nodejs,
-    name: 'Node.js',
+    name: 'Node.js (持續學習中)',
     type: 'Backend',
   },
   {
     imageUrl: express,
-    name: 'Express.js',
+    name: 'Express.js (持續學習中)',
     type: 'Backend',
   },
   {
@@ -277,16 +277,6 @@ export const socialLinks = [
 
 export const projects = [
   {
-    // iconUrl: taking,
-    // theme: 'btn-back-green',
-    img: taking_screenshot,
-    name: '竹慶建設官網',
-    description:
-      '這是我為前公司過渡期開發的官網專案，當時，公司對這塊領域沒那麼了解。因此，我向經理自告奮勇，和一名設計系朋友協力在一個月半完成這個作品⋯⋯',
-    sourceCode: 'https://github.com/MikeyJinWei/ta-king.github.io.git',
-    liveURL: 'https://mikeyjinwei.github.io/ta-king.github.io/index.html',
-  },
-  {
     // iconUrl: threads,
     // theme: 'btn-back-green',
     img: portfolio_screenshot,
@@ -296,5 +286,15 @@ export const projects = [
     sourceCode:
       'https://github.com/MikeyJinWei/react-3d-portfolio-vol.1/tree/dev',
     liveURL: '',
+  },
+  {
+    // iconUrl: taking,
+    // theme: 'btn-back-green',
+    img: taking_screenshot,
+    name: '竹慶建設官網',
+    description:
+      '這是我為前公司過渡期開發的官網專案，當時，公司對這塊領域沒那麼了解。因此，我向經理自告奮勇，和一名設計系朋友協力在一個月半完成這個作品⋯⋯',
+    sourceCode: 'https://github.com/MikeyJinWei/ta-king.github.io.git',
+    liveURL: 'https://mikeyjinwei.github.io/ta-king.github.io/index.html',
   },
 ];
