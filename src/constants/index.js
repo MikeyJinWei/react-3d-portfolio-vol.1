@@ -10,6 +10,7 @@ import {
   taking_screenshot,
   recipe_screenshot,
   portfolio_screenshot,
+  social_app_screenshot,
 } from '../assets/images';
 
 import {
@@ -280,10 +281,20 @@ export const projects = [
   {
     // iconUrl: threads,
     // theme: 'btn-back-green',
+    img: social_app_screenshot,
+    name: 'React Social App',
+    description:
+      '這是我的第二個 React 專案 - 一個簡單的社群 App，深刻讓我理解上網找資料、閱讀文件能力的重要性。',
+    sourceCode: 'https://github.com/MikeyJinWei/next-x/tree/feat',
+    liveURL: 'https://next-x-ten.vercel.app/',
+  },
+  {
+    // iconUrl: threads,
+    // theme: 'btn-back-green',
     img: portfolio_screenshot,
     name: 'React 3D Portfolio',
     description:
-      '這是我的第一個 React 專案，當時正是我接觸 React 基礎的時期，某天在 YouTube 吸收知識時，我無意見看到一個酷炫的 3D 圖教學，趁這個機會，我萌發了一個想法：嘗試開發自我介紹網站，來驗證自己是否能使用 useState, useEffect 及 props 解決問題⋯⋯',
+      '這是我的第一個 React 專案，讓我補足了自己之前囫圇吞棗的部分，也學習到函數與 Hook 間可能會如何搭配使用以控制 DOM。',
     sourceCode:
       'https://github.com/MikeyJinWei/react-3d-portfolio-vol.1/tree/dev',
     liveURL: '',
@@ -294,7 +305,7 @@ export const projects = [
     img: taking_screenshot,
     name: '竹慶建設官網',
     description:
-      '這是我為前公司過渡期開發的官網專案，當時，公司對這塊領域沒那麼了解。因此，我向經理自告奮勇，和一名設計系朋友協力在一個月半完成這個作品⋯⋯',
+      '這是我的第一個專案，讓我學習解決開發時的 Layout 問題、套件庫與手寫之間的抉擇、設計稿未規劃但突發的需求。',
     sourceCode: 'https://github.com/MikeyJinWei/ta-king.github.io.git',
     liveURL: 'https://mikeyjinwei.github.io/ta-king.github.io/index.html',
   },
