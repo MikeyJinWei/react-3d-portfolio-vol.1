@@ -1,7 +1,6 @@
 import React from 'react';
 import { projects } from '../constants/index';
 import { Link } from 'react-router-dom';
-import { arrow } from '../assets/icons';
 import CTA from '../components/CTA';
 
 const Projects = () => {

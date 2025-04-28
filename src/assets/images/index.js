@@ -11,6 +11,7 @@ import taking from './taking.jpg';
 import taking_screenshot from './taking_screenshot.jpg';
 import recipe_screenshot from './recipe_screenshot.jpg';
 import portfolio_screenshot from './portfolio_screenshot.jpg';
+import social_app_screenshot from './social_app_screenshot.jpeg';
 
 export {
   texas_roadhouse,
@@ -26,4 +27,5 @@ export {
   taking_screenshot,
   recipe_screenshot,
   portfolio_screenshot,
+  social_app_screenshot,
 };
